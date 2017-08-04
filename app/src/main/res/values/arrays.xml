@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="news_viewpage_arrays">
+        <item>头条</item>
+        <item>科技</item>
+        <item>经济</item>
+        <item>生物</item>
+        <item>文学</item>
+        <item>军事</item>
+        <item>历史</item>
+    </string-array>
+
+    <string-array name="collection_viewpage_arrays">
+
+        <item>已收藏</item>
+        <item>已点赞</item>
+    </string-array>
+</resources>

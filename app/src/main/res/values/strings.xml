@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">博闻强识</string>
+
+    <!--主要菜单-->
+
+    <string name="main_tab_name_home">主页</string>
+    <string name="main_tab_name_discover">发现</string>
+    <string name="main_tab_name_my">我的</string>
+
+    <!--用户登录/注册-->
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+
+    <!--我的-->
+    <string name="more_collection">点赞收藏</string>
+    <string name="more_scope">应用评分</string>
+    <string name="more_share">分享好友</string>
+    <string name="more_update">检查更新</string>
+    <string name="more_about">关于我们</string>
+    <string name="more_adverise">意见反馈</string>
+    <string name="share_title">分享</string>
+
+
+
+    <!--搜索-->
+
+    <string name="search_news_hit">请输入关键字</string>
+
+</resources>

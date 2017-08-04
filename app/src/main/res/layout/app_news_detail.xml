@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/news_view"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/news_title"
+            android:layout_margin="@dimen/space_10"
+            android:layout_width="match_parent"
+            android:text=""
+            android:maxLines="2"
+            android:gravity="center"
+            android:textSize="@dimen/size_20"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/news_desc"
+            android:gravity="center|left"
+            android:text=""
+            android:textSize="@dimen/font_12"
+            android:layout_marginLeft="@dimen/size_10"
+            android:layout_marginRight="@dimen/size_10"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <WebView
+                android:layout_width="match_parent"
+                android:id="@+id/news_content"
+                android:visibility="visible"
+                android:background="@color/white"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"/>
+
+            <View
+                android:layout_marginTop="@dimen/size_10"
+                android:layout_width="match_parent"
+                android:background="@color/orange"
+                android:layout_height="@dimen/lay_2"/>
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="点赞"
+                    android:id="@+id/btn_give"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="@dimen/lay_2"
+
+                    android:background="@color/orange"
+                    android:layout_height="match_parent"/>
+
+                <Button
+                    android:layout_weight="1.0"
+                    android:text="收藏"
+                    android:id="@+id/btn_collection"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <com.wxkj.apps.news.widget.EmptyLayout
+        android:id="@+id/error_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+
+</FrameLayout>

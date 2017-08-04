@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:orientation="vertical">
+        <View
+            style="@style/h_line"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:id="@+id/lv_user_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@drawable/ic_material"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_16">
+
+            <com.wxkj.apps.news.widget.CircleImageView
+                android:id="@+id/iv_avatar"
+                style="@style/UserFaceImageStyle"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+
+                app:border_color="@color/white"
+                app:border_width="2dip" />
+
+            <LinearLayout
+
+                android:layout_weight="1.0"
+                android:layout_width="0dp"
+                android:layout_marginLeft="@dimen/size_6"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tv_nickname"
+                    style="@style/option_item_text"
+                    android:layout_marginBottom="@dimen/size_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="uni7corn"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_ndesc"
+                    android:visibility="gone"
+                    style="@style/option_item_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="uni7corn"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_unlogin"
+                    style="@style/option_item_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="未登录"
+                    />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                app:srcCompat="@drawable/ic_arrow_right" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/h_line"
+            android:layout_height="1px" />
+
+        <View
+            style="@style/h_line"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:id="@+id/rl_collection"
+            style="@style/option_item_rl"
+            android:background="@drawable/ic_material">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@null"
+                android:src="@mipmap/me_collect" />
+
+            <TextView
+                style="@style/option_item_text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/more_collection" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                app:srcCompat="@drawable/ic_arrow_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <View
+                style="@style/h_line"
+                android:layout_height="1px"
+                android:layout_marginLeft="50dp"
+                tools:ignore="RtlHardcoded" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_adverise"
+            style="@style/option_item_rl"
+            android:background="@drawable/ic_material">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@null"
+                android:src="@mipmap/me_idea" />
+
+            <TextView
+                style="@style/option_item_text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/more_adverise" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                app:srcCompat="@drawable/ic_arrow_right" />
+        </LinearLayout>
+
+        <View
+            style="@style/h_line"
+            android:layout_height="1px" />
+
+
+        <View
+            style="@style/h_line"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:id="@+id/rl_share"
+            style="@style/option_item_rl"
+            android:background="@drawable/ic_material">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="@dimen/space_10"
+                android:contentDescription="@null"
+                android:src="@mipmap/me_share"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                style="@style/option_item_text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/more_share" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                app:srcCompat="@drawable/ic_arrow_right" />
+        </LinearLayout>
+
+        <View
+            style="@style/h_line"
+            android:layout_height="1px" />
+
+        <View
+            style="@style/h_line"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp" />
+
+
+        <LinearLayout
+            android:id="@+id/rl_update"
+            style="@style/option_item_rl"
+            android:background="@drawable/ic_material">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@null"
+                android:src="@mipmap/me_update"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                style="@style/option_item_text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/more_update" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                app:srcCompat="@drawable/ic_arrow_right" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <View
+                style="@style/h_line"
+                android:layout_height="1px"
+                android:layout_marginLeft="50dp"
+                tools:ignore="RtlHardcoded" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_about"
+            style="@style/option_item_rl"
+            android:background="@drawable/ic_material">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="@dimen/space_10"
+                android:contentDescription="@null"
+                android:src="@mipmap/me_about_us"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                style="@style/option_item_text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/more_about" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                app:srcCompat="@drawable/ic_arrow_right" />
+        </LinearLayout>
+
+        <View
+            style="@style/h_line"
+            android:layout_height="1px" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

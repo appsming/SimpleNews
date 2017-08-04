@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--消息提示-->
+    <string name="tip_double_click_exit">再点一次将退出！</string>
+    <string name="data_loading">数据加载....</string>
+    <string name="loading_no_more">已加载全部</string>
+    <string name="parse_data_error">数据解析错误！</string>
+    <string name="login_faile_error">登录失败,用户名或密码错误！</string>
+    <string name="request_error_hint">请求失败!</string>
+    <string name="tip_network_error">没有可用的网络</string>
+    <string name="register_faile_error">注册失败!</string>
+    <string name="register_re_faile">用户名已经被注册!</string>
+    <string name="error_view_no_data">暂无内容</string>
+    <string name="error_view_network_error_click_to_refresh">@string/tip_network_error</string>
+    <string name="error_view_load_error_click_to_refresh">内容加载失败\r\n点击重新加载</string>
+   <string name="unlogin_tip">请先登录！</string>
+
+
+    <string name="footer_type_loading">@string/data_loading</string>
+    <string name="footer_type_error">加载失败</string>
+    <string name="footer_type_net_error">网络错误</string>
+    <string name="footer_type_not_more">没有更多数据</string>
+
+    <string name="state_network_error">网络错误</string>
+    <string name="state_loading">正在加载…</string>
+    <string name="state_not_more">没有更多数据</string>
+    <string name="state_load_error">加载失败</string>
+    <string name="state_refreshing">正在刷新</string>
+
+    <string name="news_faile_error">@string/footer_type_error</string>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/view_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/day_colorPrimary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_15"
+            android:text=""
+            android:drawableLeft="@mipmap/btn_back_normal"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/view_searcher"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="@dimen/space_20"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_search_view"
+            app:iconifiedByDefault="false"
+            app:queryBackground="@color/transparent"
+            app:queryHint="输入内容搜索" />
+
+
+    </LinearLayout>
+
+
+    <!--<ListView-->
+        <!--android:id="@+id/lv_list"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:scrollingCache="true"-->
+        <!--android:divider="?attr/lineColor"-->
+        <!--android:visibility="gone" />-->
+
+    <!--<com.wxkj.apps.news.widget.EmptyLayout-->
+        <!--android:id="@+id/error_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:visibility="gone" />-->
+
+
+    <FrameLayout
+
+        android:id="@+id/search_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
